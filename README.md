@@ -1,66 +1,105 @@
-# Spend Analytics & P2P Performance Dashboard (Power BI)
+# Spend Intelligence & P2P Analytics Dashboard (Power BI)
 
-**What this is:** A Power BI spend intelligence dashboard built to give procurement and finance stakeholders end-to-end visibility into **overall spend, PO compliance, and Procure-to-Pay (P2P) cycle performance**.
+## Overview
 
-**Outcome:** The dashboard helped identify **low PO compliance**, long **P2P cycle times**, and **aging POs**, enabling teams to fix governance gaps and target process bottlenecks.
+Designed and developed a multi-page Power BI dashboard providing end-to-end visibility into procurement spend and Procure-to-Pay (P2P) performance.
 
----
-
-## Business Problem
-Stakeholders lacked a single source of truth to answer:
-- Where is the organization spending (category / supplier / cost center)?
-- What % of spend is compliant (**PO vs Non-PO**)?
-- Where are delays happening across **PR → PO → Invoice → Payment**?
-- Which POs are aging and creating operational and cashflow risk?
+The dashboard enables stakeholders to:
+- Monitor total spend and PO vs Non-PO split
+- Track PO compliance against target
+- Identify long P2P cycle time stages
+- Detect aging POs and overdue invoices
+- Analyze spend by supplier, cost centre, GL, and category
 
 ---
 
-## What I Built (Deliverables)
-- **Multi-page Power BI dashboard** with executive + diagnostic views  
-- KPI framework for:
-  - **Total Spend**, **PO vs Non-PO spend**, **PO Compliance %**
-  - **P2P cycle time** and stage-level delays
-  - **Aging POs / aging invoices** (bucketed)
-  - **Supplier / cost center concentration**
-- Interactive analysis using:
-  - **Slicers**, **drill-through**, cross-filtering
-  - DAX-based measures for ratios, trends, aging buckets, and cycle time metrics
-- Data modeling approach:
-  - Cleaned, standardized, and modeled data into an analysis-ready structure (star schema where applicable)
+## 01 — Executive Overview (Spend & KPI Summary)
 
----
+High-level executive dashboard summarizing:
+- Total Spend, PO Spend, Non-PO Spend
+- Number of POs, Suppliers, Transactions
+- Spend breakdown by month and cost centre
+- Supplier concentration analysis
 
-## Key Insights (What this dashboard surfaces)
-- **Low PO compliance** identified through PO vs Non-PO spend patterns  
-- **Extended P2P cycle time** isolated using stage-level timeline views  
-- **Aging POs** flagged using aging buckets to prioritize closure and reduce risk  
-- Concentration risks highlighted via top suppliers / cost centers to support governance actions
-
----
-
-## Screenshots (Core Views)
-
-### 1) Executive Overview — Spend + Compliance + P2P KPIs
 ![Executive Overview](screenshots/01.png)
 
-### 2) PO Compliance — PO vs Non-PO Spend + Drivers
-![PO Compliance](screenshots/02.png)
+---
 
-### 3) P2P Cycle Time — Stage Delays & Bottleneck Identification
-![P2P Cycle](screenshots/03.png)
+## 02 — P2P Lifecycle & Cycle Time Analysis
 
-### 4) Aging Analysis — Long-Aging POs / Invoices
-![Aging POs](screenshots/04.png)
+Process-stage visualization of:
+PR Creation → PO Creation → PO Approval → Invoice Receipt → Invoice Payment
 
-### 5) Supplier / Cost Center Analysis — Concentration & Spend Patterns
-![Supplier Cost Center](screenshots/05.png)
+Key KPIs:
+- Avg P2P Cycle Time
+- PR Approval Rate
+- % Rework
+- Days per stage
+
+Used to identify bottlenecks and delay drivers.
+
+![P2P Lifecycle](screenshots/02.png)
 
 ---
 
-## Tools & Skills Demonstrated (ATS keywords)
-**Power BI, DAX, Power Query, Data Modeling, KPI Design, Spend Analytics, Procurement Analytics, Procure-to-Pay (P2P), PO Compliance, Aging Analysis, Data Visualization, Stakeholder Reporting**
+## 03 — Invoice & Payment Analysis
+
+Provides visibility into:
+- Invoice vs Gross variance
+- Aging invoices (paid vs overdue)
+- Overdue distribution buckets
+- Spend by payment method and currency
+- Month-over-Month tax impact
+
+Enables working capital and payment risk analysis.
+
+![Invoice Analysis](screenshots/03.png)
 
 ---
 
-## Data Confidentiality
-All data shown has been **anonymized**. Entity names, identifiers, and sensitive values have been masked/modified to preserve confidentiality while retaining analytical structure.
+## 04 — PO Compliance & Budget Utilisation
+
+Tracks:
+- PO vs Non-PO monthly trend
+- PO Compliance % against 90% target
+- Cost centre-level budget utilisation
+- PO status summary
+- Age of open POs
+
+Highlights governance gaps and compliance risks.
+
+![PO Compliance](screenshots/04.png)
+
+---
+
+## 05 — GL & Cost Centre Drill-Down (Data Lineage View)
+
+Hierarchical spend flow:
+Total Spend → Business Unit → Cost Centre → GL Code → GL Name
+
+Enables granular traceability of spend drivers.
+
+![GL Drilldown](screenshots/05.png)
+
+---
+
+## Technical Implementation
+
+- Power BI
+- DAX measures (Compliance %, Aging Buckets, Cycle Time, Variance)
+- Star Schema Data Modeling
+- KPI Framework Design
+- Drill-through & Cross-filtering
+- Dynamic slicers
+
+---
+
+## Business Impact
+
+The dashboard framework enabled:
+- Identification of low PO compliance
+- Detection of extended P2P cycle time
+- Prioritization of long-aging POs
+- Improved spend governance visibility
+
+(Data anonymized for confidentiality.)
