@@ -38,7 +38,7 @@ Key KPIs:
 
 Used to identify bottlenecks and delay drivers.
 
-![P2P Lifecycle](screenshots/02.png)
+![P2P Lifecycle](screenshots/04.png)
 
 ---
 
@@ -68,7 +68,7 @@ Tracks:
 
 Highlights governance gaps and compliance risks.
 
-![PO Compliance](screenshots/04.png)
+![PO Compliance](screenshots/02.png)
 
 ---
 
